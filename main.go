@@ -22,5 +22,9 @@ func main() {
 		Price:  20.5,
 	}
 
+	json_data, err := json.Marshal(book)
+	fmt.Print(err)
+	fmt.Printf("----------------------------")
+	fmt.Println(string(json_data))
 
 }
